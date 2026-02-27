@@ -69,7 +69,7 @@ export default function UrlForm(){
 
             {shortenedUrl && (
             <div className="result">
-                <p>Shortened URL: <a href={`${import.meta.env.VITE_API_BASE_URL}/api/r/${shortenedUrl}`} target="_blank"><strong>{`${import.meta.env.VITE_API_BASE_URL}/${shortenedUrl}`}</strong></a></p>
+                <p>Shortened URL: <a href={`${import.meta.env.VITE_API_BASE_URL}/api/r/${shortenedUrl}`} target="_blank"><strong>{`${shortenedUrl}`}</strong></a></p>
             </div>
 )}
         </div>
