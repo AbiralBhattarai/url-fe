@@ -3,7 +3,7 @@ import { getAllUrls, getAnalytics } from '../../services/api'
 import ClicksChart from '../Analytics/ClicksChart'
 import './UrlsList.css'
 
-const PAGE_SIZE = 2
+const PAGE_SIZE = import.meta.env.VITE_PAGE_SIZE
 
 export default function UrlsList() {
     const [urls, setUrls] = useState([])
